@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rupeezy/cached_webview.dart';
-
+import 'package:rupeezy/webview.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,11 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    // MaterialPageRoute(
-                    //   builder: (context) => const WebViewWidget(),
-                    // ),
                     MaterialPageRoute(
-                      builder: (context) =>  CachedWebView(),
+                      builder: (context) => const WebView(),
                     ),
                   );
                 },
