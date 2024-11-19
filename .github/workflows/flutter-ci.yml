@@ -6,8 +6,8 @@ on:
   push:
     branches:
     - master
+  workflow_dispatch:
     
-# on: push    # Default will running for every branch.
     
 jobs:
   build:
